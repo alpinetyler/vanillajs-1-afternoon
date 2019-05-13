@@ -29,14 +29,14 @@ var bottomRight = board[8];
 
 //check the winning combinations
 if(topLeft !== undefined && topLeft === topCenter && topCenter === topRight){
-    alert(`${topLeft} is the winner!`)
-  
-}
-if(topLeft !== undefined && topLeft === middleCenter && middleCenter === bottomLeft){
-    alert(`${topLeft} is the winner!`)
+    alert(topLeft + " is the winner")
+ 
 }
 if(topLeft !== undefined && topLeft === middleCenter && middleCenter === bottomRight){
-    alert(`${topLeft} is the winner!`)
+    alert(topLeft + " is the winner")
+}
+if(topLeft !== undefined && topLeft === middleCenter && middleCenter === bottomRight){
+    alert(topLeft + " is the winner")
 }
 if(topCenter !== undefined && topCenter === middleCenter && middleCenter === bottomCenter){
     alert(`${topCenter} is the winner!`)
@@ -48,10 +48,10 @@ if(topRight !== undefined && topRight === middleCenter && middleCenter === botto
     alert(`${topRight} is the winner!`)
 }
 if(middleLeft !== undefined && middleLeft === middleCenter && middleCenter === middleRight){
-    alert(`${leftCenter} is the winner!`)
+    alert(`${middleLeft} is the winner!`)
 }
 if(bottomLeft !== undefined && bottomLeft === bottomCenter && bottomCenter === bottomRight){
-    alert(`${bottomleft} is the winner!`)
+    alert(`${bottomLeft} is the winner!`)
 }
 
 //check to see if the board is full
